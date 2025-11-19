@@ -19,7 +19,7 @@ article{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 150px 0;
+    margin: 130px 0;
     gap: 16px;
 
 }
@@ -58,7 +58,14 @@ button:hover{
     transition: all 0.3s ease 0s;
 }
 
-@media screen and (max-width:520px) {
+@media screen and (max-height:670px) {
+  article{
+    flex-direction: row;
+    justify-content: space-around;
+  }  
+}
+
+@media screen and (max-width:805px) {
     h1{
         font-size: 68px
     }

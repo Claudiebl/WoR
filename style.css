@@ -17,11 +17,17 @@ body{
 article{
     display: flex;
     flex-direction: column;
+    flex: 1;
     align-items: center;
     justify-content: center;
-    margin: 130px 0;
+    margin: 68px;
+    padding: 5%;
     gap: 16px;
 
+}
+
+h2,p{
+    font-size: 1.6vw;
 }
 
 h1{
@@ -29,7 +35,7 @@ h1{
     font-weight: 400;
     font-style: normal;
     text-align: center;
-    font-size: 158px;
+    font-size: 9vw;
     color: #E6E8EF;
     text-shadow: 0 4px 4px hsla(0, 0%, 0%, 0.26);
     margin-bottom: 15px;
@@ -46,7 +52,7 @@ button{
     background-color: transparent;
     border: none;
     cursor: pointer;
-    font-size: large;
+    font-size: 1.6vw;
 }
 
 button:hover{
@@ -54,27 +60,13 @@ button:hover{
     font-weight: 400;
     font-style: normal;
     text-shadow: 0 4px 4px hsla(0, 0%, 0%, 0.26);
-    font-size: 2rem;
+    font-size: 2vw;
     transition: all 0.3s ease 0s;
 }
 
-@media screen and (max-height:670px) {
-  article{
-    flex-direction: row;
-    justify-content: space-around;
-  }  
-}
-
-@media screen and (max-width:805px) {
-    h1{
-        font-size: 68px
+@media screen and (max-width:800px) {
+    article{
+        margin-top: 50%;
     }
 
-    h2, nav, button{
-        font-size: small;
-    }
-
-    button:hover{
-        font-size: 1.5rem;
-    }
 }
